@@ -62,7 +62,6 @@ const Table = ({ data, headers }) => {
 
   // Render the table component
   return (
-    <SafeAreaView style={styles.container}>
     <KeyboardAvoidingView behavior='height' style={styles.container}>
       <ScrollView  directionalLockEnabled={true}
        contentContainerStyle={styles.scrollContainer}
@@ -85,7 +84,6 @@ const Table = ({ data, headers }) => {
       <ProfileModal selectedProfile={selectedProfile} handleCloseProfile={handleCloseProfile} />
       </View>
     </KeyboardAvoidingView>
-    </SafeAreaView>
   );
 };
 
